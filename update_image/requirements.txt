@@ -1,0 +1,6 @@
+boto==2.49.0
+boto3==1.26.155
+kubernetes==22.6.0
+rich==13.7.1
+PyYAML==6.0.1
+click==8.1.7

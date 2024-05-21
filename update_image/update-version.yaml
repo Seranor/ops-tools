@@ -1,0 +1,11 @@
+- cluster: ""
+  namespace: "app-pre"
+  registry: ""
+- app:
+  # Python
+  - imageName: test-service-all-be
+    version: v2.6.2
+    isUpdate: true
+    appList:
+      - test1-service-be
+      - test2-service-be
