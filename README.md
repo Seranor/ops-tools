@@ -39,7 +39,28 @@ python aws_billing_all.py
 python aws_billing_services.py
 ```
 
+# aws_lb_eks
+说明：EKS 集群上创建的 Loadbancer 会有没有回收的情况，
 
+这个工具对比 AWS 和 EKS 的 LB，一般是 AWS 的 LB 会比 EKS 上的多，人工确认是否可以删除
+```bash
+# 下载依赖
+pip install -r requirements.txt
+
+# 编辑 main.py
+修改 
+region
+access_key
+secret_key
+clusters
+
+确保填写的用户key有权限
+
+# 执行脚本
+python3 main.py
+
+出现的结果是Loadbancer的domain，拿着domain去AWS上查找是否还在使用，再进行删除
+```
 
 # cloudflare_dns
 说明:
